@@ -4,6 +4,7 @@
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './dashboard/home/home.component';
 import { CreateWalletComponent } from './dashboard/wallets/create/create.wallet.component';
+import { SendFromWalletComponent } from './dashboard/wallets/send/send.from.wallet.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
 import { TableComponent } from './dashboard/table/table.component';
 import { NotificationComponent } from './dashboard/notification/notification.component';
@@ -25,6 +26,7 @@ const routes: Routes = [
   {
     path: 'dashboard', component: RootComponent, children: [
       { path: 'wallet/create', component: CreateWalletComponent },
+      { path: 'wallet/send', component: SendFromWalletComponent },
       { path: '', component: HomeComponent },
       { path: 'profile', component: ProfileComponent },
       { path: 'table', component: TableComponent },

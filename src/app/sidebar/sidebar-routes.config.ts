@@ -1,7 +1,8 @@
 export const ROUTES = [
-     {
+    {
         path: '#wallet', id: 'wallet', title: 'Wallet', icon: 'apps', children: [
-            { path: 'wallet/create', title: 'Create Wallet', icon: 'C' }
+            { path: 'wallet/create', title: 'Create Wallet', icon: 'C' },
+            { path: 'wallet/send', title: 'Send From Wallet', icon: 'S' }
         ]
     },
     { path: '/dashboard', title: 'Dashboard', icon: 'dashboard', children: null },
